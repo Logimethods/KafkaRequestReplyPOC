@@ -1,4 +1,4 @@
-package com.gauravg.controller;
+package com.logimethods.controller;
 
 import java.util.concurrent.ExecutionException;
 
@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.gauravg.model.Model;
+import com.logimethods.model.Model;
 
 @RestController
 public class SumController {
@@ -32,8 +32,8 @@ public class SumController {
 	String requestReplyTopic;
 	
 	@ResponseBody
-	@PostMapping(value="/sum",produces=MediaType.APPLICATION_JSON_VALUE,consumes=MediaType.APPLICATION_JSON_VALUE)
-	public Model sum(@RequestBody Model request) throws InterruptedException, ExecutionException {
+	@PostMapping(value="/greeting",produces=MediaType.APPLICATION_JSON_VALUE,consumes=MediaType.APPLICATION_JSON_VALUE)
+	public Model greeting(@RequestBody Model request) throws InterruptedException, ExecutionException {
 		// create producer record
 		ProducerRecord<String, Model> record = new ProducerRecord<String, Model>(requestTopic, request);
 		// set reply topic in header

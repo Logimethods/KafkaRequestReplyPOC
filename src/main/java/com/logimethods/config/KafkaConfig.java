@@ -1,4 +1,4 @@
-package com.gauravg.config;
+package com.logimethods.config;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -24,7 +24,7 @@ import org.springframework.kafka.requestreply.ReplyingKafkaTemplate;
 import org.springframework.kafka.support.serializer.JsonDeserializer;
 import org.springframework.kafka.support.serializer.JsonSerializer;
 
-import com.gauravg.model.Model;
+import com.logimethods.model.Model;
 
 @Configuration
 public class KafkaConfig {

@@ -1,5 +1,5 @@
 
-package com.gauravg.model;
+package com.logimethods.model;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -12,36 +12,23 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-"firstNumber",
-"secondNumber"
+"name",
 })
 public class Model {
 
-@JsonProperty("firstNumber")
-private int firstNumber;
-@JsonProperty("secondNumber")
-private int secondNumber;
+@JsonProperty("name")
+private String name;
 @JsonIgnore
 private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
-@JsonProperty("firstNumber")
-public int getFirstNumber() {
-return firstNumber;
+@JsonProperty("name")
+public String getName() {
+return name;
 }
 
-@JsonProperty("firstNumber")
-public void setFirstNumber(int firstNumber) {
-this.firstNumber = firstNumber;
-}
-
-@JsonProperty("secondNumber")
-public int getSecondNumber() {
-return secondNumber;
-}
-
-@JsonProperty("secondNumber")
-public void setSecondNumber(int secondNumber) {
-this.secondNumber = secondNumber;
+@JsonProperty("name")
+public void setName(String name) {
+this.name = name;
 }
 
 @JsonAnyGetter
