@@ -10,8 +10,8 @@
 6. Using curl or another client (in this case we are using httpie) send JSON with 1 field, your name: `http POST localhost:8080/greeting name=bob`
 
 ### Downloads:
-Download httpie (curl-like client): `sudo apt-get install httpie`
-Download maven: `sudo apt-get install maven`
+1. Download httpie (curl-like client): `sudo apt-get install httpie`
+2. Download maven: `sudo apt-get install maven`
 
 ### Sample Request-Response:
 
