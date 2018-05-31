@@ -9,6 +9,10 @@
 5. (From code directory) Start app: `mvn spring-boot:run`
 6. Using curl or another client (in this case we are using httpie) send JSON with 1 field, your name: `http POST localhost:8080/greeting name=bob`
 
+### Downloads:
+Download httpie (curl-like client): `sudo apt-get install httpie`
+Download maven: `sudo apt-get install maven`
+
 ### Sample Request-Response:
 
 Request: `http POST localhost:8080/greeting name=bob`
